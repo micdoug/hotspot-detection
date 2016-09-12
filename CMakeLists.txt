@@ -10,3 +10,5 @@ set(Boost_USE_STATIC_LIBS TRUE)
 add_executable(hotspot-detection main.cpp grid.cpp movement.cpp)
 
 target_link_libraries(hotspot-detection ${Boost_LIBRARIES})
+
+install(TARGETS hotspot-detection DESTINATION bin)
